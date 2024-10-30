@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", serif;
+  background-color: #d4bee4;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+nav {
+}
+.navWrapper {
+  background-color: #3b1e54;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-size: 30px;
+}
+.logo h2 i {
+  margin-right: 5px;
+}
+.logo h2 {
+  color: #eeeeee;
+}
+.rightPart ul {
+  display: flex;
+  align-items: center;
+}
+.rightPart ul li {
+  list-style: none;
+  margin-left: 30px;
+  font-size: 20px;
+}
+.rightPart ul li a {
+  text-decoration: none;
+  color: #eeeeee;
+}
+.hamburgerIcon {
+  display: none;
+  
+}
+
+.beforeIcn {
+  display: none;
+}
+
+.signInArea{
+    position: relative;
+    cursor: pointer;
+
+}
+.form{
+    position: absolute;
+    background-color: #3b1e54;
+    width: 350px;
+    top: 25px;
+    right: 0;
+    padding: 5px;
+    transition: 1s;
+    overflow: hidden;
+    max-height: 0;
+    
+}
+.logout{
+    background-color: #3b1e54;
+    color: #eeeeee;
+    padding: 10px 20px;
+    display: none;
+}
+.signInArea:hover .form {
+    max-height: 350px;
+    
+}
+
+/* .maxheight{
+    max-height: 350px;
+} */
+.form label{
+color: #eeeeee;
+text-align: center;
+display: block;
+margin-bottom: 10px;
+}
+.form input{
+    color: #eeeeee;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 100%;
+    padding-inline:10px;
+    border: 1px solid #d4bee4;
+    }
+    .inputArea{  
+        position: relative;
+    }
+    .EyeShow, .EyeClose{
+        position: absolute;
+        top: 40%;
+        right: 10px;
+        font-size: 18px;
+        color: #eeeeee;
+    }
+    .btn{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        
+    }
+    .form button{
+        border: none;
+        padding: 10px 20px;
+        margin-top: 20px;
+        
+    }
+   
+@media (min-width: 320px) and (max-width: 575px) {
+  .navWrapper {
+    position: relative;
+    width: 100%;
+  }
+  .beforeIcn {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    color: #eeeeee;
+    padding: 5px;
+    font-size: 25px;
+    transition: 1s;
+  }
+  .rightPart {
+    position: absolute;
+    top: 0;
+    left: -600px;
+    width: 100%;
+    background-color: #3b1e54;
+    height: 100vh;
+    transition: 1s;
+  }
+  .rightPart ul {
+    padding-top: 80px;
+    display: block;
+    text-align: center;
+    transition: 1s;
+  }
+  .rightPart ul li {
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+  .hamburgerIcon {
+    display: block;
+    font-size: 25px;
+  padding-inline: 10px;
+  color: #eeeeee;
+  }
+  .rightPart ul li a {
+    padding: 5px 10px;
+  }
+  .logo {
+    z-index: 1;
+    font-size: 20px;
+    transition: 1s;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .logo h2 {
+  }
+}
